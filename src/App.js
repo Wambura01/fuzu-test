@@ -8,6 +8,7 @@ import Landing from "./components/landing/landing";
 import useStore from "./zustand/useStore";
 import Loader from "./components/loader/loader";
 import { resources } from "./utils/translation";
+import Error from "./components/error/error";
 
 i18n.use(initReactI18next).init({
   resources,
@@ -57,7 +58,7 @@ function App() {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <Error message={error} />;
   }
 
   return (

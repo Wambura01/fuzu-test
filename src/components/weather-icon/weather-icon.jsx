@@ -10,13 +10,34 @@ function WeatherIcon({ weatherId }) {
   const imgSource = renderImage(weatherId);
 
   if (imgSource === "Rain") {
-    return <img className="weather-icon" src={Rain} alt="weather-icon" />;
+    return (
+      <img
+        className="weather-icon"
+        style={{ width: "70%" }}
+        src={Rain}
+        alt="weather-icon"
+      />
+    );
   } else if (imgSource === "Clear") {
-    return <img className="weather-icon" src={Sunny} alt="weather-icon" />;
+    return (
+      <img
+        className="weather-icon"
+        style={{ width: "70%" }}
+        src={Sunny}
+        alt="weather-icon"
+      />
+    );
   } else if (imgSource === "Cloudy") {
     return <img className="weather-icon" src={Cloudy} alt="weather-icon" />;
   } else if (imgSource === "Snow") {
-    return <img className="weather-icon" src={Snow} alt="weather-icon" />;
+    return (
+      <img
+        className="weather-icon"
+        style={{ width: "70%" }}
+        src={Snow}
+        alt="weather-icon"
+      />
+    );
   } else {
     return null;
   }

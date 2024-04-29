@@ -61,10 +61,6 @@
   width: 50%;
 }
 
-.weather-icon {
-  width: 100%;
-}
-
 .content-container {
   display: flex;
   flex-direction: column;
